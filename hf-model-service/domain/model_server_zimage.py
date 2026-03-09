@@ -5,7 +5,7 @@ from pathlib import Path
 
 from domain.model import Model
 from domain.model_server import ModelServer
-from util.model_utils import FileFormat, get_model_path
+from util.model_utils import FileFormat
 
 
 class ZImageServer(ModelServer):
