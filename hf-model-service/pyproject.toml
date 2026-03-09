@@ -1,0 +1,24 @@
+[project]
+name = "hf-client"
+version = "0.1.0"
+description = "HuggingFace model inference client"
+requires-python = ">=3.10"
+dependencies = [
+    "huggingface_hub>=1.6.0",
+    "transformers>=4.36.0",
+    "torch>=2.0.0",
+    "diffusers>=0.27.0",
+    "safetensors>=0.4.0",
+    "optimum-quanto>=0.2.7",
+    "pillow>=10.0.0",
+    "python-dotenv>=1.0.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "ipython>=8.0.0",
+    "pytest>=7.0.0",
+]
+
+[tool.uv]
+managed = true
