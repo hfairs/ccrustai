@@ -7,12 +7,7 @@ from transformers import T5EncoderModel
 
 from domain.model import Model
 from domain.model_server import ModelServer
-from util.model_utils import (
-    get_model_path,
-    get_model_file_path,
-    get_filepath_generator,
-    FileFormat,
-)
+from util.model_utils import FileFormat
 
 
 class FluxServer(ModelServer):

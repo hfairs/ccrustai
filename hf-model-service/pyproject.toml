@@ -1,17 +1,18 @@
 [project]
-name = "hf-client"
+name = "hf-model-service"
 version = "0.1.0"
-description = "HuggingFace model inference client"
+description = "HuggingFace model service"
 requires-python = ">=3.10"
 dependencies = [
-    "huggingface_hub>=1.6.0",
-    "transformers>=4.36.0",
-    "torch>=2.0.0",
-    "diffusers>=0.27.0",
-    "safetensors>=0.4.0",
-    "optimum-quanto>=0.2.7",
-    "pillow>=10.0.0",
+    "accelerate>=1.0.0",
+    "diffusers>=0.37.0",
+    "huggingface_hub>=1.0.0",
+    "optimum-quanto>=0.2.0",
+    "pillow>=12.0.0",
     "python-dotenv>=1.0.0",
+    "safetensors>=0.7.0",
+    "torch>=2.0.0",
+    "transformers>=5.0.0",
 ]
 
 [project.optional-dependencies]
